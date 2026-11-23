@@ -1,0 +1,6 @@
+void main() {
+    noop();
+    if (false) {} else {}
+}
+
+void noop() {}

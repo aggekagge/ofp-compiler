@@ -1,0 +1,20 @@
+# Scalar types, arrays, loops, and mixed numeric arithmetic.
+
+void main() {
+  int x = 1;
+  float y = 2.0;
+  char c = 'a';
+  string s = "hi";
+  int[] a;
+  a = new int[3];
+  a[0] = x;
+  if (x < 5) println(x);
+  while (x < 3) { x = x + 1; }
+  println(s.length);
+  println(add(3, 0.5));
+  return;
+}
+
+float add(int a, float b) {
+  return a + b;
+}

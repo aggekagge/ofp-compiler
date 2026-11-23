@@ -1,0 +1,16 @@
+int sum(int n) {
+  int s = 0;
+  int i = 0;
+  while (i < n) {
+    s = s + i;
+    i = i + 1;
+  }
+  return s;
+}
+
+void main() {
+  int[] a = new int[10];
+  a[0] = 5;
+  println(a[0] + sum(10));
+  return;
+}

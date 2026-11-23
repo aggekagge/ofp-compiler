@@ -1,0 +1,4 @@
+void main() {
+    int value = 5;
+    println(value.length);
+}

@@ -1,0 +1,18 @@
+void main() {
+    int[] empty = {};
+    println(empty.length);
+    int[] values = {1, 2};
+    values = {3, 4};
+    println(values[1]);
+    println(first({7, 8}));
+    int[] more = make();
+    println(more[0]);
+}
+
+int first(int[] values) {
+    return values[0];
+}
+
+int[] make() {
+    return {9, 10};
+}

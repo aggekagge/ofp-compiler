@@ -1,0 +1,8 @@
+void main() {
+    int value = 5;
+    if (value + 10) println(value);
+    int count = 10;
+    float fraction = 3.14;
+    count = fraction;
+    return count;
+}

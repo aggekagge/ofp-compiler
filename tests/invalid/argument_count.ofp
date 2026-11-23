@@ -1,0 +1,7 @@
+void main() {
+    println(identity());
+}
+
+int identity(int value) {
+    return value;
+}

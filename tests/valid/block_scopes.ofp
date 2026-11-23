@@ -1,0 +1,17 @@
+void main() {
+    int value = 1;
+    if (true) {
+        float value = 2.5;
+        println(value);
+    }
+    println(value);
+    println(shadow(3));
+}
+
+int shadow(int value) {
+    if (true) {
+        int value = 4;
+        println(value);
+    }
+    return value;
+}

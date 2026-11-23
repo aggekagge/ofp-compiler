@@ -1,0 +1,107 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "java.project.sourcePaths": [
+      "src/main/java",
+      "build/generated-src"
+    ],
+    "java.project.outputPath": "build/vscode",
+    "java.project.referencedLibraries": [
+      "lib/antlr4-runtime-4.13.1.jar",
+      "lib/asm-all-5.0.1.jar"
+    ],
+    "antlr4.generation": {
+      "mode": "none"
+    },
+    "antlr4.debug": {
+      "visualParseTreeHorizontal": true,
+      "visualParseTreeClustered": false
+    },
+    "search.exclude": {
+      "build": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "OFP: build",
+        "type": "process",
+        "command": "python",
+        "args": [
+          "ofp.py",
+          "build"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "OFP: test",
+        "type": "process",
+        "command": "python",
+        "args": [
+          "ofp.py",
+          "test"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": [],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "OFP: run recursion",
+        "type": "process",
+        "command": "python",
+        "args": [
+          "ofp.py",
+          "run",
+          "examples/recursion.ofp"
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": []
+      }
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "request": "launch",
+        "name": "Check OFP program",
+        "mainClass": "ofp.cli.Main",
+        "args": [
+          "check",
+          "${workspaceFolder}/examples/language_overview.ofp"
+        ],
+        "preLaunchTask": "OFP: build",
+        "cwd": "${workspaceFolder}"
+      },
+      {
+        "type": "antlr-debug",
+        "request": "launch",
+        "name": "Debug OFP parse tree",
+        "grammar": "${workspaceFolder}/src/main/antlr/OFP.g4",
+        "input": "${workspaceFolder}/examples/strings.ofp",
+        "startRule": "program",
+        "visualParseTree": true
+      }
+    ]
+  }
+}

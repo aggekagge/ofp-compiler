@@ -1,0 +1,5 @@
+# Start here: the smallest OFP program with visible output.
+
+void main() {
+    println("Hello, world!");
+}

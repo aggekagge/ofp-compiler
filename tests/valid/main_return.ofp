@@ -1,0 +1,5 @@
+void main() {
+    println(1);
+    return;
+    println(2);
+}

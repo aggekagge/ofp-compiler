@@ -1,0 +1,1 @@
+Array assignment requires an array

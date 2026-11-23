@@ -1,0 +1,3 @@
+If condition must be bool
+Type mismatch: expected int, got float
+void function cannot return a value

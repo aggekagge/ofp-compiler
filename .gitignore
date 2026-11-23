@@ -1,0 +1,19 @@
+# Compiler builds, generated parser sources, programs, and test reports
+/build/
+
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and operating-system metadata
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep the required bundled dependencies; ignore stray compiled classes
+*.class

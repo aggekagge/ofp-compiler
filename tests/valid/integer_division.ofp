@@ -1,0 +1,6 @@
+void main() {
+    println(7 / 2);
+    println(-7 / 2);
+    println(7 / -2);
+    println(-7 / -2);
+}

@@ -1,0 +1,12 @@
+# Exercise both operand orders: casts must happen before the next operand is emitted.
+
+void main() {
+    println(1 + 2.5);
+    println(2.5 + 1);
+    println(5 - 2.5);
+    println(5.5 - 2);
+    println(2 * 2.5);
+    println(2.5 * 2);
+    println(5 / 2.0);
+    println(5.0 / 2);
+}

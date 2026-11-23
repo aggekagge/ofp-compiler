@@ -1,0 +1,10 @@
+void main() {
+    1 + 2.5;
+    2 * 3;
+    answer();
+    println(42);
+}
+
+float answer() {
+    return 4.2;
+}

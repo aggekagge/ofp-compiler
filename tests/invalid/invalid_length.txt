@@ -1,0 +1,1 @@
+.length allowed only on arrays or string
